@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+  <title>Login</title>
+  <style>
+    input {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <form action="/login" method="POST">
+    username: <input type="text" name="username">
+    password: <input type="text" name="password">
+    <button type="submit" class="btn btn-primary">Login</button>
+  </form>
+  <div class="card-action">
+    <a href="/auth/facebook" class="btn btn-info">
+      <i class="fa fa-facebook"></i> Sign in with facebook
+    </a>
+  </div>
+</body>
+</html>
